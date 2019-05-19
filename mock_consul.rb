@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'securerandom'
-require 'concurrent'
 require 'pry-byebug'
 
 module SitRep
