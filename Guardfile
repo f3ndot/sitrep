@@ -29,8 +29,8 @@ guard 'rack' do
   watch(%r{^.+\.rb})
 end
 
-guard 'rack', port: 8500, config: 'mock_consul.ru' do
-  watch('Gemfile.lock')
-  watch('mock_consul.ru')
-  watch(%r{^.+\.rb})
-end
+# guard 'rack', port: 8500, config: 'mock_consul.ru' do
+#   watch('Gemfile.lock')
+#   watch('mock_consul.ru')
+#   watch(%r{^.+\.rb})
+# end

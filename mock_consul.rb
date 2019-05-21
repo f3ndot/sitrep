@@ -42,6 +42,11 @@ module SitRep
         'http',
         'microservice'
       ],
+      'unknown-service' => [
+        '2.0.5',
+        'http',
+        'microservice'
+      ],
     }.freeze
 
     FAUX_HEALTH = [
