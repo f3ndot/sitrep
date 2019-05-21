@@ -31,7 +31,7 @@ module SitRep
     end
 
     def call(env)
-      catalog_response = Faraday.get "http://#{CONSUL_HOST}/v1/catalog/serxxvices"
+      catalog_response = Faraday.get "http://#{CONSUL_HOST}/v1/catalog/services"
       return consul_down_response unless catalog_response.status == 200
 
       services = JSON.parse(catalog_response.body)
